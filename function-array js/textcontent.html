@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mengubah textcontent dan background color</title>
+    </head>
+    <body>
+        <h1 id="judul">Judul Awal</h1>
+        <p id="paragraf">Paragraf Awal</p>
+        <button onclick="ubahText()">Ubah Text</button>
+        <button onclick="ubahWarna()">Ubah Warna</button>
+    <script>
+        function ubahText() {
+            var judul = document.getElementById("judul");
+            var paragraf = document.getElementById("paragraf");
+
+            judul.textContent = "Judul Diubah";
+            paragraf.textContent = "Paragraf Diubah";
+        }
+
+        function ubahWarna() {
+            var body = document.body;
+            body.style.backgroundColor = "lightblue";
+        }
+    </script>
+    </body>
+</html>
